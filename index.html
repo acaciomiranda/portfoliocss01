@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/7485dc50f2.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <title>Acácio Miranda</title>
+</head>
+
+<body>
+
+    <header>
+        <div>
+            <img src="Imagens/logo_acacio.png" alt="Logo Acácio Miranda">
+        </div>
+        <ul>
+            <li>
+                <a target="_blank" href="https://github.com/acaciomiranda">github</a>
+            </li>
+            <li>
+                <a target="_blank" href="https://www.linkedin.com/in/acaciomiranda/">linkedin</a>
+            </li>
+            <li>
+                <a target="_blank" href="https://mailto:sr.acaciomiranda@gmail.com">email</a>
+            </li>
+        </ul>
+    </header>
+
+    <main>
+        <section class="container">
+            <div class="name">
+                <h1>Acácio Miranda</h1>
+                <h5>Full Stack Developer Student</h5>
+            </div>
+
+            <div onclick="displayAbout()" id="arrow">
+                <i id="animation" class="fa-solid fa-sort-down"></i>
+            </div>
+            <div style="display: none" id="about">
+                <p>
+                    Graduado em Comunicação Social - Jornalismo e Publicidade e Propaganda. Também realizou MBA em
+                    Gestão Esportiva.
+                    Atualmente, iniciou os estudos em Programação e Data Science, com o objetivo de desenvolver novas
+                    habilidades e migrar de área profissional.
+            </div>
+            <div class="form">
+                <div>
+                    <p>Entre em contato!</p>
+                </div>
+                <form>
+                    <input type="text" placeholder="seu email">
+                    <button>Enviar!</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        function displayAbout() {
+            var arrow = document.getElementById('animation');
+            arrow.classList.toggle('rotate');
+            var display = document.getElementById('about');
+            display.classList.toggle('active');
+        }
+    </script>
+</body>
+
+</html>
